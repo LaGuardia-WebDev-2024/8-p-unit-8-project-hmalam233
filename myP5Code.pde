@@ -1,11 +1,12 @@
 //🟢setup Function - runs on set canvas
 void setup(){
 
+
     size(1000, 670);
     background(159, 205, 201 );
     
-    drawFish(200, 200, color(200,0,200)); 
-    drawFish(300, 200, color(0,200,200));
+    drawCircle(20, 200, color(20,0,280)); 
+    drawCircle(300, 200, color(20,200,200));
     
    
     
@@ -19,22 +20,24 @@ draw = function(){
 
 };
 
-var drawName = function(){
-var textX = random(20, 300)
-}
+var drawCircle = function(circleX, circleY){
+  //var circleX = 230;
+  //var circleY = 170;
+fill(123,23,23)
+};
 
 
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
-drawFish(mouseX, mouseY, color(200,0,200)); 
+drawCircle(mouseX, mouseY, color(200,0,200)); 
 }
 
 //🟡drawFish Function - will run when called
-var drawFish = function(fishX, fishY, fishColor){
+var drawFish = function(circleX, circleY, circleColor){
   textSize(80);
-  fill(fishColor);
-  text("𓆝", fishX, fishY);
+  fill(circleColor);
+  text("𓆝", circleX, circleY);
 };
 
 
