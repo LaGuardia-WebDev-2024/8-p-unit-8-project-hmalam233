@@ -9,7 +9,10 @@ void setup(){
     drawCircle(30, 200);
     
     drawHeart(30,50);
-    drawHeart(40,60);
+    drawHeart(400,300);
+    
+    drawSquare(45,30);
+    drawSquare(300,302);
     
     
     
@@ -26,13 +29,11 @@ var drawCircle = function(circleX, circleY){
   //var circleY = 170;
 fill(112, 199, 229)
 ellipse(circleX,circleY,63,56)
+
+
 }
 
-var drawHeart = function(heartX, heartY){
-  //var heartX = 230;
-  //var heartY = 134;
-ellipse(heartX,heartY)
-}
+
 
 
 
@@ -41,12 +42,16 @@ mouseClicked = function(){
 drawCircle(mouseX, mouseY); 
 }
 
-//🟡drawHeart Function - will run when its called 
+//🟡drawHeart Function - will run when it's called 
 var drawHeart = function(circleX, circleY,circleColor){
   textSize(80);
   fill(circleColor);
   text("❤️", circleX, circleY);
   
+//drawSquare Function - will run when it's called
+  var drawSquare = function(circleX, circleY,)
+  textSize(90)
+  text("🟦", circleX, circleY);
   
 };
 
