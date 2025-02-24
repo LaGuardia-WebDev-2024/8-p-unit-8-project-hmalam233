@@ -22,6 +22,8 @@ void setup(){
 draw = function(){
 
 
+
+
 };
 
 var drawCircle = function(circleX, circleY){
@@ -47,9 +49,10 @@ var drawHeart = function(circleX, circleY,circleColor){
   textSize(80);
   fill(circleColor);
   text("❤️", circleX, circleY);
+  }
   
 //drawSquare Function - will run when it's called
-  var drawSquare = function(circleX, circleY,)
+  var drawSquare = function(circleX, circleY){
   textSize(90)
   text("🟦", circleX, circleY);
   
