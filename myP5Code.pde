@@ -1,27 +1,61 @@
-//🟢setup Function - will run once
-setup = function() {
-    size(600, 400);
-    background(255,255,255,0);
+//🟢setup Function - runs on set canvas
+void setup(){
+
+
+    size(1000, 670);
+    background(159, 205, 301 );
     
-    drawFish(200, 200, color(200,0,200)); 
-    drawFish(300, 200, color(0,200,200));
+    drawCircle(20, 200); 
+    drawCircle(30, 200);
+    
+    drawHeart(30,50);
+    drawHeart(400,300);
+    
+    drawSquare(45,30);
+    drawSquare(300,302);
+    
+    
+    
 };
 
 //🟢draw Function - will run on repeat
 draw = function(){
 
+
+
+
 };
 
-//🟢mouseClicked Function - will run when mouse is clicked
-mouseClicked = function(){
+var drawCircle = function(circleX, circleY){
+  //var circleX = 230;
+  //var circleY = 170;
+fill(112, 199, 229)
+ellipse(circleX,circleY,63,56)
+
 
 }
 
-//🟡drawFish Function - will run when called
-var drawFish = function(fishX, fishY, fishColor){
+
+
+
+
+//🟢mouseClicked Function - will run when mouse is clicked
+mouseClicked = function(){
+drawCircle(mouseX, mouseY); 
+}
+
+//🟡drawHeart Function - will run when it's called 
+var drawHeart = function(circleX, circleY,circleColor){
   textSize(80);
-  fill(fishColor);
-  text("𓆝", fishX, fishY);
+  fill(circleColor);
+  text("❤️", circleX, circleY);
+  }
+  
+//drawSquare Function - will run when it's called
+  var drawSquare = function(circleX, circleY){
+  textSize(90)
+  text("🟦", circleX, circleY);
+  
 };
 
 
